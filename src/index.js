@@ -1,15 +1,9 @@
-WordCounter = function() {
-  'use strict';
+var countSample = function() {
+  var sample = require('./sample.json');
+  var wordsArray = sample.split(' ');
+  console.log(wordsArray);
+};
 
-  function WordCounter (text) {
-
-  }
-
-  var counter = {
-    sayHello: function() {
-      console.log('Hello.');
-    }
-  }
-
-  return counter;
-}();
+module.exports = {
+  countSample: countSample
+};

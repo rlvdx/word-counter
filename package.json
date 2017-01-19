@@ -1,0 +1,20 @@
+{
+  "name": "word-counter",
+  "version": "1.0.0",
+  "description": "Count the occurrences words with more than two letters in a text",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlvdx/word-counter.git"
+  },
+  "keywords": [
+    "random",
+    "word",
+    "counter"
+  ],
+  "author": "Raphaël Louvradoux <raphael.louvradoux@gmail.com>",
+  "license": "MIT"
+}
