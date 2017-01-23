@@ -1,7 +1,7 @@
 {
   "name": "rlvdx-word-counter",
-  "version": "1.0.0",
-  "description": "Count the occurrences words with more than two letters in a text",
+  "version": "1.0.1",
+  "description": "Count the occurrences of words with more than two letters in a text.",
   "main": "src/index.js",
   "scripts": {
     "sample": "node src/sample.js"
