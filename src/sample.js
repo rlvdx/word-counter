@@ -1,2 +1,2 @@
 var counter = require('./index.js');
-counter.countSample();
+console.log(counter.countSample());

@@ -1,12 +1,13 @@
-module.exports = {
-  countSample: function() {
-    var sample = require('./sample.json');
-    // Capitalized or not, a word is considered the same
-    sample = sample.toLowerCase();
-    // Only keep letters for comparison and whitespaces for separation
-    sample = sample.replace(/[^a-z ]/g, '');
+'use strict';
 
-    var wordsArray  = sample.split(' ');
+module.exports = {
+  countWordsInText: function (text) {
+    // Capitalized or not, a word is considered the same
+    text = text.toLowerCase();
+    // Only keep letters for comparison and whitespaces for separation
+    text = text.replace(/[^a-z ]/g, '');
+
+    var wordsArray  = text.split(' ');
     // Remove words that have strictly less than three letters
     wordsArray = wordsArray.filter(function(val) { return val.length > 2 });
 
@@ -20,6 +21,10 @@ module.exports = {
       wordsObject[word] = 1;
     });
 
-    console.log(wordsObject);
+    return wordsObject;
+  },
+  countSample: function() {
+    var sample = require('./sample.json');
+    return this.countWordsInText(sample);
   }
 };
